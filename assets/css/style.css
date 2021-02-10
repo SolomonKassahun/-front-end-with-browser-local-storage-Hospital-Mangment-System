@@ -1,0 +1,78 @@
+.navbarlight{
+    color: white;
+} 
+.bglight{
+    background-color: rgba(15,98,173,.75);
+}
+nav a{
+    color: white;
+}
+#nav-background{
+    
+    filter:grayscale(70%)
+}
+#nav-background1{
+    height: 300px;
+    filter:grayscale(100%)
+}
+
+.wrapper {
+    margin-top: 0px;
+    position: relative;  
+}
+.wrapper .overlay {
+    position: absolute;
+    top:10rem;
+    left: 3rem;
+    color:rgba(0, 0, 0, 0.877);
+
+}
+
+.wrapper .overlay1 {
+    position: absolute;
+    top:10rem;
+    left: 3rem;
+    color:rgba(0, 0, 0, 0.877);
+    background-color: rgba(16, 16, 196, 0.479);
+
+}
+.overlay h1{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
+#subscribe{
+    background-color: rgba(0, 128, 128, 0.589);
+}
+#schedule-btn{
+    background-color: rgb(10, 187, 187);
+}
+#p1{
+    font-size: 20px;
+}
+#p{
+    font-size: 30px;
+}
+#contact1:hover{
+    color: rgb(255, 255, 255);
+}
+.dropdown-menu{
+    background-color: rgba(15,98,173,.75);
+}
+.dropdown-item:hover{
+    background-color:  rgba(15,98,173,.75);
+
+}
+/* #contactUs{
+    background-color: teal;
+    color: white;
+} */
