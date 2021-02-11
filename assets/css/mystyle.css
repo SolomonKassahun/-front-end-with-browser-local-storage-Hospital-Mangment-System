@@ -1,0 +1,215 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body{
+     font-family: sans-serif;
+     margin: 0;
+ }
+
+ body p{
+     font-weight: 300 !important;
+ }
+
+.bg-blue{
+    background-color: rgba(15,98,173,.75);
+}
+
+.navbar{
+    opacity: 1.0;
+}
+
+.navbar-dark{
+    color: red !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+nav a{
+    color: white;
+}
+span {
+    color: crimson;
+}
+
+nav span {
+    color: white;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+
+
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown-menu{
+    background-color: rgba(15,98,173,.75);
+}
+.dropdown-item:hover{
+    background-color:  rgba(15,98,173,.75);
+    
+
+}
+
+@media(max-width: 990px){
+    .disappear{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .smallsize{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .forsmall{
+        display: none;
+    }
+}
+
+@media(max-width: 990px){
+    .forbig{
+        display: none;
+    }
+}
+
+
+/* from W3*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.text-dang {
+  color: crimson !important;
+  font-weight: lighter;
+  background-color: rgba(240, 240, 240, 0.4);
+  margin-left: 30%;
+  margin-right: 30%;
+
+  
+  
+}
+.text-dange {
+  color: black !important;
+  font-weight: 500;
+  background-color: rgba(240, 240, 240, 0.4);
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 50%;
+  /* The width is the width of the web page */
+}
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
