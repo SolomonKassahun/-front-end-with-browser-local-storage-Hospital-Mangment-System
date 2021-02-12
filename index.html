@@ -1,237 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="assets/image/logo2.jfif" type="image/x-icon" style="border-radius: 50%;">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.CSS">
+  <link rel="stylesheet" href="assets/css/mystyle.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <header id="site-header" class="header-footer-goup" role="banner">
-        <div class="container-fluid ">
-            <div class="float-left">
-                <span class="toolbar-location-title">
-                  <a href="location.html">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Locations
-                  </a>
-                </span>
-            </div>
-            <div class="float-right">
-                <div class="header-social">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fab fa-google-plus-g"></i></a>
-                </div>
-            </div>
-        </div><br>
-        <div class="my-4" >
-            <nav class="navbar navbar-expand-lg sticky-top  bglight">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/image/logo2.jfif" id="logo" class="img-fluid my-0"  alt="" />
-                </a>
-                <p><a href="index.html" class="">
-                  <strong>ABC Hospital</strong><br>
-                  <i>work 24 hours to serve the people</i>
-                </a></p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto p-3">
-                    <li class="nav-item active pl-4">
-                      <a class="nav-link" href="index.html">Who Are We <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown pl-4">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Regarding Patient
-                      </a>
-                      <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-light" href="#">Register</a>
-                        <a class="dropdown-item text-light" href="#">Check Status</a>
-                      </div>
-                    </li>
-                    <li class="nav-item pl-4">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item dropdown pl-4">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                      </a>
-                      <div class="dropdown-menu p-1" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-light" href="#">Allergists</a>
-                        <a class="dropdown-item text-light" href="#">Dermatologists</a>
-                        <a class="dropdown-item text-light" href="#">Ophthalmologists</a>
-                        <a class="dropdown-item text-light" href="#">Obstetrician/gynecologists</a>
-                        <a class="dropdown-item text-light" href="#">Cardiologists</a>
-                        <a class="dropdown-item text-light" href="#">Endocrinologists</a>
-                        <a class="dropdown-item text-light" href="#">Pediatrics</a>
-                        <a class="dropdown-item text-light" href="#">Surgery</a>
 
-                      </div>
-                    </li>
-                    
-                    <li class="nav-item pl-4">
-                      <a class="nav-link" href="location.html">Locations</a>
-                    </li>
-                    <li class="nav-item pl-4">
-                      <a href="#contactUs" class="nav-link">CONTACT US</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              <div class="wrapper">
-                <img src="assets/image/navBackground.jpg" id="nav-background" class="img-fluid w-100 my-0"  alt="" />
-                 <div class="overlay">
-                    <h1><i>About </i> <br> <strong>US</strong></h1>
-                </div>
-              </div>
-        </div>
-    </header>
-    <div class="ml-5 mr-2 p-4">
-      <h3>About Us</h3>
-      <h1><strong>ABC Hospital</strong></h1>
-      <p>
-        We are proud to provide our patients with clean, safe, and welcoming environments at our hand doctor’s offices in West Bloomfield, Howell, St. Clair Shores, and Macomb.
-      </p>
-      <p>
-        We offer a comprehensive range of hand, elbow, and wrist procedures and treatments, including casts, X-rays, ultrasounds, electromyography, and much more.
-      </p>
-      <p>
-        Dr. Arora serves patients throughout southeast Michigan, and he has privileges at several hospitals in Macomb County and Oakland County.
-      </p>
-    </div>
+  <!--Navbar section-->
 
-    <div class="container-fluid p-4">
-      <div style="font-size: 30px;" class="p-4 bg-primary text">
-        <p class="text-center text-light font-italic">Mission Statement & <br></p>
-        <p class="text-center text-light font-weight-bold">PRACTICE PHILOSOPHY</p>
-      </div>
-    </div>
-    <div class="container p-5">
-      <p class="text-justify">
-        The mission of Arora Hand Surgery is to work with our patients to develop an effective treatment plan with a board-certified, specialty-trained hand surgeon that exceeds each patient’s expectations, while adhering to the highest standards of healthcare and safety.
-      </p>
-      <p>In order to accomplish our mission, we are committed to the following:</p>
-      <ul>
-        <li>Recognizing the unique needs of each patient to ensure they are treated with compassion and respect in a comfortable environment
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue ">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/image/logo2.jfif" id="logo" class="img-fluid my-0 w-25 p-1 rounded-circle" alt="" />
+      <strong> <span>ABC HOSPITAL</span> </strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="index.html">WHO ARE WE <span class="sr-only">(current)</span></a>
         </li>
-        <li>Allowing patients the time to understand treatment goals and ideas through open discussions grounded in trust and mutual respect
+        <li class="nav-item">
+          <a class="nav-link text-white" href="services.html">SERVICES</a>
         </li>
-        <li>Empowering patients with the knowledge to make fully informed medical decisions
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            FOR PATIENT
+          </a>
+          <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="department.html">Department</a>
+            <a class="dropdown-item text-light" href="login.html">Log in</a>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            FOR STAFF
+          </a>
+          <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="doctor.html">Doctor</a>
+            <a class="dropdown-item text-light" href="lab.html">Lab techncian</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#contactus" class="nav-link text-white">CONTACT US</a>
         </li>
       </ul>
     </div>
+  </nav>
 
-    <div class="row mr-2 ml-4" id="subscribe">
-      <div class="offset-md-2"></div>
-      <div class="col-md-3">
-        <p style="font-size: 25px;" class="text-center text-light font-italic p-4">
-          Get on the list <br> <strong>SUBSCRIBE</strong>
-        </p>
+
+
+  <!--Slider images-->
+
+  <div id="carouselExampleIndicators" class="carousel slide  pt-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner pt-4">
+      <div class="carousel-item active">
+        <img class="d-block w-100 img-fluid" src="assets/image/radiology.jpg" alt="First slide"
+          style="max-height: 500px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dang rounded text-uppercase ">ABC Hospital Building</h5>
+          <p class="text-dange rounded">Our safe and clean environment is among what makes us unique. </p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <form class="form-inline my-5">
-          <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email">
-          <button class="btn btn-outline-primary my-2 my-sm-0 text-light" type="submit">SUBSCRIBE <i class="fal fa-arrow-right"></i></button>
-        </form>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" src="assets/image/reception1.jpg" alt="Second slide"
+          style="max-height: 500px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dang rounded text-uppercase ">Reception</h5>
+          <p class="text-dange rounded">We are available 24/7 and you are welcome at anytime.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" src="assets/image/bed.jpg" alt="Third slide" style="max-height: 500px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dang rounded text-uppercase "><b>Inpatient treatment</b></h5>
+          <p class="text-dange rounded">We offer clean and safe beds for inpatient services.</p>
+        </div>
       </div>
     </div>
-    <div class="container-fluid my-2">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="wrapper">
-            <img src="assets/image/schedule-bg.jpg" id="nav-background1" class="img-fluid w-100 my-0 ml-3"  alt="" />
-             <div class="overlay1 text-center text-light">
-                <h3>Schedule an</h3>
-                <h2>APPOINTMENT</h2>
-                <p>If you are experiencing pain, swelling, stiffness, or other symptoms in your elbows, wrists, or hands, make an appointment to see Dr. Avery Arora today.</p>
-                <a href="" class="btn p-3 text-light" id="schedule-btn" type="button">SCHEDULE <i class="fal fa-arrow-right"></i></a>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+  <!--About us-->
+
+  <h3 class="text-uppercase pt-5"
+    style="border-bottom: 1px solid #dcdcdc; width: 30%; margin-left: 35%; text-align: center;">ABOUT<span>
+      US </span>
+  </h3>
+
+
+
+
+  <!--Display on large screen-->
+
+
+  <div class="row disappear pt-2">
+    <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
+      <img class="card-img-top img-fluid rounded-circle  p-2" src="assets/image/vision.jpg" alt=" ">
+
+      <figcaption data-aos="zoom-in-up" data-aos-duration="3000" class="figure-caption text-dark text-center pt-3">
+        <h4 class="text-center pb-4 pt-4"><span>Vision</span></h4>
+        <p class="text-center">
+          Tower Health will be an innovative, leading<br> regional health system dedicated to advancing the health and
+          transforming the lives of the people we serve through excellent clinical quality; accessible,
+          patient-centered, caring service; and unmatched physician and employee commitment.
+        </p>
+      </figcaption>
+    </div>
+    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
+      <img class="card-img-top img-fluid rounded-circle  p-2" src="assets/image/mission.jpg" alt=" ">
+
+      <figcaption data-aos="zoom-in-up" data-aos-duration="3000" class="figure-caption text-dark text-center pt-3 ">
+        <h4 class="text-center pb-4 pt-4"><span>Mission</span></h4>
+        <p class="text-center">
+          The Mission of Tower Health is to provide<br> compassionate, accessible, high-quality, cost-effective
+          healthcare to the community; to promote health; to educate healthcare professionals; and to participate in
+          appropriate clinical research.
+        </p>
+      </figcaption>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
+      <img class="card-img-top img-fluid rounded-circle  p-2" src="assets/image/mission3.jpg" alt=" ">
+
+      <figcaption data-aos="zoom-in-up" data-aos-duration="3000" class="figure-caption text-dark text-center pt-3">
+        <h4 class="text-center pb-4 pt-4"><span>Team Work</span></h4>
+        <p class="text-center">
+          Teamwork is critically important to provide<br> safe and effective hospital care.
+          Recognizing the importance of teamwork in hospitals, we give high concern to build effective
+          and organized team that are able to achieve our vision and fulfill our mission.
+        </p>
+      </figcaption>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--Display on small screen-->
+  <div class="smallsize">
+    <div class="row">
+      <div class="col-6 col-md-6 pt-2 pl-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"><img
+          class="w-100 pt-5" src="assets/image/vision.jpg" alt="" style="min-height: 200px;"></div>
+      <div class="col-6 col-md-6 pt-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <h6 class="text-center"><span>Vision</span></h6>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+          est pariatur mollitia voluptatum in dolorem tempore officia voluptas commodi illo, quasi quia nobis
+          unde
+          ipsum non minima nam optio repudiandae.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-6 pt-2 pl-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"><img
+          class="w-100 pt-5" src="assets/image/mission.jpg" alt="" style="min-height: 200px;"></div>
+      <div class="col-6 col-md-6 pt-2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+        <h6 class="text-center"><span>Mission</span></h6>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+          est pariatur mollitia voluptatum in dolorem tempore officia voluptas commodi illo, quasi quia nobis
+          unde
+          ipsum non minima nam optio repudiandae.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-6 pt-2 pl-2" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500">
+        <img class="w-100 pt-5" src="assets/image/mission3.jpg" alt="" style="min-height: 200px;"></div>
+      <div class="col-6 col-md-6 pt-2" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="1500">
+        <h6 class="text-center"><span>Team Work</span></h6>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+          est pariatur mollitia voluptatum in dolorem tempore officia voluptas commodi illo, quasi quia nobis
+          unde
+          ipsum non minima nam optio repudiandae.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Latest News-->
+
+  <h3 class="text-uppercase text-center  pt-5"><span>Latest News</span></h3>
+
+
+  <div class="row w-100 p-5">
+    <div class="col-md-6" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--Impact or some textual contents-->
+
+
+  <div class="row">
+    <div class="pb-3">
+      <h3 class="text-uppercase pt-3 pb-3 text-center"
+        style="border-bottom: 1px solid #dcdcdc; margin-left:15% ; margin-right: 15%;">Our<span>
+          Role</span>
+      </h3>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
+      <h5 class="text-center"><span>On the city</span></h5>
+      <p class="text-center">
+        Across differing regions, medical<br> institutions (often referred to as “anchor institutions”)
+        play a major role in the social and economic vitality of cities. Economically we offer employment for more than
+        500 employers yearly.
+        Community building, the highly necessary counterpart to healthcare access work, has been steadily gaining
+        traction within the field of public health
+      </p>
+    </div>
+    <div class="col-md-4 " data-aos="zoom-in" data-aos-duration="3000">
+      <h5 class="text-center myimpact"><span>On rural areas </span></h5>
+      <p class="text-center">
+        We have become an integral part of<br> the rural healthcare system. Because of our significant contributions
+        to overall<br> community well-being, we are a critical component of communities across rural areas. Despite the
+        challenges, like low reimbursement rates, reduced patient volumes, We provide services across the
+        continuum of care from primary care to long-term care.
+
+      </p>
+    </div>
+    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
+      <h5 class="text-center"><span>On other Institutions</span></h5>
+      <p class="text-center">
+        Hospitals systematically deliver<br> high quality services, placing people in the center. It means patients and
+        communities are empowered for their health. It also means adopting a longer-term perspective beyond saving lives
+        to enhancing the quality of life of patients. Hospitals can be center for religious practice, which is beocming
+        obsolete, even though intitially it was through church that many hospitals were built.
+      </p> 
+    </div>
+  </div>
+
+
+
+
+  <!--Meet Our Doctors-->
+
+  <div>
+    <h3 class="text-center">Meet <span>Our</span> Doctors</h3>
+  </div>
+  <div class="row ">
+    <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="3000">
+      <a href="#">
+        <figure class="figure">
+          <img src="assets/image/doctor.jpeg" class="figure-img img-fluid rounded w-100 forbig" alt="...">
+          <img src="assets/image/doctor.jpeg" class="figure-img img-fluid rounded w-75 pt-5 pl-5  forsmall" alt="...">
+          <figcaption class="figure-caption text-center">Doctor <span>Kidus Yohannes</span> <br>
+            Paediatrics
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="3000">
+      <a href="#">
+        <figure class="figure">
+          <img src="assets/image/doctor2.jpg" class="figure-img img-fluid rounded w-100 forbig" alt="...">
+          <img src="assets/image/doctor2.jpg" class="figure-img img-fluid rounded w-75 pt-5 pl-5  forsmall" alt="...">
+          <figcaption class="figure-caption text-center">Doctor <span>Mihret Melese</span> <br>
+            Neurosurgeon
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="col-md-4" data-aos="fade-down-right" data-aos-duration="3000">
+      <a href="#">
+        <figure class="figure">
+          <img src="assets/image/doctor3.jpg" class="figure-img img-fluid rounded w-100 forbig" alt="...">
+          <img src="assets/image/doctor3.jpg" class="figure-img img-fluid rounded w-75 pt-5 pl-5  forsmall" alt="...">
+          <figcaption class="figure-caption text-center">Doctor <span>Saron Yehualashet</span> <br>
+            Radeologist
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+    
+  </div>
+
+
+
+  <!--Contact Us-->
+
+  <div class="row pt-5" id="contactus">
+    <div class="col-md-6" data-aos="fade-left" data-aos-duration="3000">
+      <h4 class="text-center pt-4">See our location...</h4>
+      <div id="map">
+      </div>
+    </div>
+    <div class="col-md-6" data-aos="fade-down" data-aos-duration="3000">
+      <form class="w-100 p-5">
+        <div class="form-group">
+          <div class="row" data-aos="fade-down" data-aos-duration="3000">
+            <div class="col">
+              <label for="">Name</label>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your name">
             </div>
           </div>
         </div>
-        <div class="col-md-6 border" id="contactUs">
-          <div class="p-5">
-            <p id="p1" class="text-dark text-center font-italic">Have Questions?</p>
-            <p id="p" class="text-dark text-center font-weight-bold">LET US HELP YOU</p> 
-            <form>
-              <div class="form-row align-items-center">
-                <div class="col">
-                  <label class="sr-only" for="fname">Name</label>
-                  <input type="text" class="form-control mb-2" id="fname" placeholder="First Name*">
-                </div>
-                <div class="col">
-                  <label class="sr-only" for="lname">Name</label>
-                  <input type="text" class="form-control mb-2" id="lname" placeholder="Last Name*">
+        <form class="w-100 p-5">
+          <div class="form-group">
+            <div class="row" data-aos="fade-down" data-aos-duration="3000">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="sr-only" for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@gmail.com">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                  
+                </div>
               </div>
-              <div class="form-group">
-                <label class="sr-only" for="choose">select</label>
-                <select class="form-control" id="choose">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+            </div>
+          </div>
+          <form class="w-100 p-5">
+            <div class="form-group">
+              <div class="row" data-aos="fade-down" data-aos-duration="3000">
+                <div class="col-md-6">
+                  <label for="exampleInputPassword1">Phone number</label>
+                </div>
+                <div class="col-md-6">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
               </div>
+            </div>
+            <form class="w-100 p-5">
               <div class="form-group">
-                <label class="sr-only" for="textarea">Example textarea</label>
-                <textarea class="form-control" id="textarea" rows="3"></textarea>
-              </div>
-              <div class="">
-                <button type="submit" id="contact1" class="float-right text-light btn btn-primary">CONTACT US</button>
+                <div class="row" data-aos="fade-down" data-aos-duration="3000">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Write your message...</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 pb-2">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Send Us</button>
               </div>
             </form>
-          </div>
-        </div>
+    </div>
+
+  </div>
+
+
+
+  <!--Footer-->
+
+  <div class="row pt-5  bg-dark text-light">
+
+    <div class="col-md-4">
+      <p class="text-center">About <span> ABC</span> Hospital</p>
+      <p class="text-center">
+        Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed
+        rhoncus
+        odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus
+        tincidunt, ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis
+        augue. Nam
+        ut nibh mollis, tristique ante sed, viverra massa.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <div class="mr-4 text-center">
+        <p class="text-center">CONTACT</p>
+        <!--<i class="fal fa-phone"></i> -->
+        <p><i class="fas fa-map-marker-alt"></i> via AmistKillo 1137 Addis Ababa Ethiopia</p>
+        <p><i class="fas fa-phone-volume"></i> Phone: (+251)953890542</p>
+        <p><i class="fas fa-envelope-square"></i> Email: abcHospita@gmail.com</p>
+        <p><i class="fab fa-skype"></i> Skype: you online</p>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row p-5 bg-dark text-light">
-        <div class="offset-md-1"></div>
-        <div class="col-md-4">
-          <p class="font-weight-bold font-italic">About the ABC Hospital</p>
-          <p class="text-justify">
-            Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <div class="ml-4">
-            <p class="font-weight-light font-italic">CONTACT</p>
-            <!--<i class="fal fa-phone"></i> -->
-            <p><i class="fas fa-map-marker-alt"></i> via AmistKillo 1137 Addis Ababa Ethiopia</p>
-            <p><i class="fas fa-phone-volume"></i> Phone:(+251)953890542</p>
-            <p><i class="fas fa-envelope-square"></i> Email:abcHospita@gmail.com</p>
-            <p><i class="fab fa-skype"></i> Skype: you online</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="ml-4">
-            <p class="font-weight-bold font-italic">Follow Us</p>
-            <a href="" class="ml-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="ml-3"><i class="fab fa-instagram"></i></a>
-            <a href="" class="ml-3"><i class="fab fa-twitter"></i></a>
-            <a href="" class="ml-3"><i class="fab fa-linkedin-in"></i></a>
-            <a href="" class="ml-3"><i class="fab fa-google-plus-g"></i></a>
-          </div>
-        </div>
+    <div class="col-md-4">
+      <div class="">
+        <p class="">Fol<span>low</span>US</p>
+        <a href="" class="ml-3 pt-5"><i class="fab fa-facebook-f"></i></a>
+        <a href="" class="ml-3 pt-5"><i class="fab fa-instagram"></i></a>
+        <a href="" class="ml-3 pt-5"><i class="fab fa-twitter"></i></a>
+        <a href="" class="ml-3 pt-5"><i class="fab fa-linkedin-in"></i></a>
+        <a href="" class="ml-3 pt-5"><i class="fab fa-google-plus-g"></i></a>
       </div>
     </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </div>
+
+
+
+
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
