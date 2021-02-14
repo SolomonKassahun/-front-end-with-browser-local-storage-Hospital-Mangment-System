@@ -103,6 +103,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 };
+form.addEventListener("submit", addNewTask);
+function addNewTask(e) {
+  
+  e.preventDefault(); 
+  var ara = [];
+
+  const fName = firName.value + " " + mName.value + " " + lName.value;
+  console.log(fName)
+  let newTask = { 
+    fullName: fName, date: new Date(),
+    birth: dBirth.value,
+    address: address.value,
+    doctor: dName.value,
+    phone: pNumber.value,
+    dOpinion: " ",
+    symptom: symptom.value,
+    status: "unseen",
+    uName: uName.value,
+    password:password.value,
+    acceptance: "pending"
+   
+
+  
+  };
+
+  let transaction = DB.transaction(["tasks"], "readwrite");
+  let objectStore = transaction.objectStore("tasks");
+
+  let request = objectStore.add(newTask);
+  request.onsuccess = () => {
+    form.reset();
+    document.getElementById("myModal").style.display = "block"    
+    
+  };
+  transaction.oncomplete = () => {
+    console.log("New appointment added");
+  };
+  transaction.onerror = () => {
+    console.log("There was an error, try again!");
+  };
+      }
  
        
   
