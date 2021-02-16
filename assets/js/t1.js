@@ -92,22 +92,81 @@ document.addEventListener('DOMContentLoaded',()=>{
       }
      
     }); 
+    function displayDescendSort() {
+      while(patintList.firstChild){
+        patintList.removeChild(patintList.firstChild)
+      }
+      let objectStore = DB.transaction('tasks').objectStore('tasks')
+      objectStore.openCursor().onsuccess = function(e){
+        let cursor = e.target.result
+        if (cursor){
+          if(((cursor.value.doctor) === docName)&&((cursor.value.status) != "seen")&&((cursor.value.acceptance) != "rejected")){
 
+              const tr = document.createElement('tr')
+              tr.setAttribute('data-patient-id',cursor.value.id)
+              tr.className = 'pInformation'
+              const td1 = document.createElement('td')
+              const td2 = document.createElement('td')
+              const td3 = document.createElement('td')
+              const td4 = document.createElement('td')
+              // const td4 = document.createElement('td')
+              // const td5 = document.createElement('td')
+              // const td6 = document.createElement('td')
+                
+                
+                //link.className = 'remove-item'
+                //link.innerHTML = '<i class="fas fa-trash"></i>'
+              td4.innerHTML = `<Button type="button" class="btn btn-primary" onclick="rejuct(${cursor.value.id})">Reject</Button>`
+              td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
     
+              td1.appendChild(document.createTextNode(cursor.value.fullName))
+              td2.appendChild(document.createTextNode(cursor.value.status))
+              
 
+              tr.append(td1,td2,td3)
+              patintList.appendChild(tr)
+              cursor.continue()
+          }
+            
+        }
+    }
+  }
+  function displayAscendSort() {
+    while(patintList.firstChild){
+      patintList.removeChild(patintList.firstChild)
+    }
+    let objectStore = DB.transaction('tasks').objectStore('tasks')
+    objectStore.openCursor().onsuccess = function(e){
+      let cursor = e.target.result
+      if (cursor){
+        if(((cursor.value.doctor) === docName)&&(cursor.value.status != "seen")&&((cursor.value.acceptance) != "rejected")){
 
-
-
-
-
-
-
-
-
-
-
-
-
+            const tr = document.createElement('tr')
+            tr.setAttribute('data-patient-id',cursor.value.id)
+            tr.className = 'pInformation'
+            const td1 = document.createElement('td')
+            const td2 = document.createElement('td')
+            const td3 = document.createElement('td')
+            const td4 = document.createElement('td')
+            
+            td4.innerHTML = `<Button type="button" class="btn btn-primary" onclick="rejuct(${cursor.value.id})">Reject</Button>`
+            td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
+            td1.appendChild(document.createTextNode(cursor.value.fullName))
+            td2.appendChild(document.createTextNode(cursor.value.status))
+            tr.append(td1,td2,td3)
+            patintList.insertBefore(tr,patintList.firstChild)
+            cursor.continue()
+        }
+          
+      }
+  }
+}
+const ascendingBtn = document.querySelector(".ascending-btn");
+const descendingBtn = document.querySelector(".descending-btn");
+descendingBtn.addEventListener("click", displayDescendSort);
+ascendingBtn.addEventListener("click", displayAscendSort);
+  
+})
 
 
 function patientHistory(){
@@ -137,33 +196,4 @@ function patientHistory(){
     
 
 }}
-function rejuct(id){
- let transaction = DB.transaction(["tasks"], "readwrite");
- var objectStore = transaction.objectStore("tasks");
- var request = objectStore.get(id);
- request.onsuccess = function (e) {
-   e = e.target.result;
-   console.log(e);
 
-   let editedTask = {
-     id: id,
-     fullName : e.fullName,
-     date : e.date,
-     birth: e.birth,
-     address :  e.address,
-     doctor : e.doctor,
-     phone : e.phone,
-     symptom : e.symptom,
-     dOpinion : e.dOpinion,
-     uName : e.uName,
-     password : e.password,
-     status : e.status,
-     acceptance: "rejected"
-   };
-
-   var store = objectStore.put(editedTask);
-   store.onsuccess = function (e) {
-     console.log("Success in updating record");
-     window.location.reload()
-    
-}}}
