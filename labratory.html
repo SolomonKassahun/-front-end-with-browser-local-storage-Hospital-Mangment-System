@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Font Owesome Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <link rel="shortcut icon" type="image/svg" href="./asset/image/logo2.jfif" />
+    <title>ABC Hospital</title>
+  
+    
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue;">
+  <div class="container-fluid pt-5 my-3">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/image/logo2.jfif" id="logo" class="img-fluid my-0 w-25 p-1 rounded-circle" alt="" />
+        <strong> <span>ABC HOSPITAL</span> </strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">WHO ARE WE <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              FOR PATIENT
+            </a>
+            <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-light" href="faculity.html">View Departments</a>
+              <a class="dropdown-item text-light" href="log_in.html">Log in</a>
+             
+
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              FOR STAFF
+            </a>
+            <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-light" href="docLogin.html">Doctor</a>
+              <a class="dropdown-item text-light" href="labLogin.html">Lab Tech</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+    
+  
+
+
+
+
+
+    <div class="container">
+    <div style="margin-top: 5%;">
+        <h1 style="text-align: center;">Hello Laboratorist</h1>
+        <div class="row">
+
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <img src="/assets/image/d.jpg" alt="lab tech image" class="img-fluid">
+                
+            </div>
+            <div class="col-md-4" style="margin-top: 3%;">
+                <p style="font-size: larger;">Name : Kidus Yohannes <br><br>
+                Wellcome to your work <br>
+                “Doctor: Your devotion and care brings healing, comfort, and hope.”
+                </p>
+            </div>
+        </div>
+        <div class="card-action">
+            <h5 id="task-title">List of patients</h5>
+            <div class="form-group mb-1">
+                <input class="form-control" type="search" name="filter" id="filter" placeholder="search patients">
+                
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <a href="#!" class="button btn-success ascending-btn btn-lg float-right ml-1">Recent</a>&nbsp;
+                    <a href="#!" class="button btn-success descending-btn btn-lg float-right">oldest</a><br>
+                </div>
+
+            </div>
+            
+        
+            
+            <div class="row" >
+
+                <div class="col-md-12">
+                    <table id="doctor" class="table table-striped" style="width:100%;background-color:whitesmoke;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>status</th>
+                                <th>check</th>
+                            </tr>
+                        </thead>
+                        <tbody class="pList">
+                            
+                        </tbody>
+                
+                    </table>
+                </div>
+            </div>
+    
+            <!-- Dropdown Structure -->
+                
+        
+        </div>
+
+    </div>
+    </div>
+
+    <script src="assets/js/labratory.js"></script>
+
+</body>
+</html>
