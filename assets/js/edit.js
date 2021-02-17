@@ -101,7 +101,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
- 
+  function rejuct(id){
+    let transaction = DB.transaction(["tasks"], "readwrite");
+    var objectStore = transaction.objectStore("tasks");
+    var request = objectStore.get(id);
+    request.onsuccess = function (e) {
+      e = e.target.result;
+      console.log(e);
+   
+      let editedTask = {
+        id: id,
+        fullName : e.fullName,
+        date : e.date,
+        birth: e.birth,
+        address :  e.address,
+        doctor : e.doctor,
+        phone : e.phone,
+        symptom : e.symptom,
+        dOpinion : e.dOpinion,
+        uName : e.uName,
+        password : e.password,
+        status : e.status,
+        acceptance: "rejected"
+      };
+   
+      var store = objectStore.put(editedTask);
+      store.onsuccess = function (e) {
+        console.log("Success in updating record");
+        window.location.reload()
+       
+   }
+   }
+   }
   
 
 
