@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+body {
+    font-family: 'Fraunces', serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.foot{
+    padding: 3% 0 0 3%;
+    overflow: hidden;
+}
+#linkss{
+    text-align: center;
+}
+.li{
+    margin-left: 40%;
+}
+
