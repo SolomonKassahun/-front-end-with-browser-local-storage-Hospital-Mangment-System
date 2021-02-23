@@ -11,7 +11,7 @@ const inputState = document.querySelector('#inputState')
 const patientRegisterForm = document.querySelector('#pRegister')
 const patintList = document.querySelector('.pList')
 const tableR = patintList.getElementsByTagName('tr')
-//const filter = document.getElementById('#filter')
+
 let DB;
 document.addEventListener('DOMContentLoaded',()=>{
     let patientDB = indexedDB.open('hospital',1)
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         console.log('database reafg')
     }
     function DisplayPatient(){
-        //filter.addEventListener('keyup',filterTasks)
+        
         while(patintList.firstChild){
             patintList.removeChild(patintList.firstChild)
         }
@@ -80,16 +80,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     }
     
-    // function filterTasks() {
-    //     let key = document.getElementById('filter').value; 
-    //     for (let i = 0; i < tableR.length; i++) {
-    //       if (key.indexof(tableR[i].firstChild.textContent)>-1) {
-    //         tableR[i].style.display = "";
-    //       } else {
-    //         tableR[i].style.display = "none";
-    //       }
-    //     }
-    //   }
+
     
 })
 

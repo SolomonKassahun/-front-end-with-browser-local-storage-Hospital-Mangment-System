@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         let objectStore = DB.transaction('tasks').objectStore('tasks')
         objectStore.openCursor().onsuccess = function(e){
             let cursor = e.target.result
-            //console.log(cursor.value.doctor)
+
             if (cursor){
                 if((cursor.value.status) == "seen"){
                     const tr = document.createElement('tr')
@@ -55,19 +55,13 @@ document.addEventListener('DOMContentLoaded',()=>{
                     const td2 = document.createElement('td')
                     const td3 = document.createElement('td')
                     
-                    // const td4 = document.createElement('td')
-                    // const td5 = document.createElement('td')
-                    // const td6 = document.createElement('td')
-                    
-                    //link.className = 'remove-item'
-                    //link.innerHTML = '<i class="fas fa-trash"></i>'
+
                     
                     td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
                    
                     td1.appendChild(document.createTextNode(cursor.value.fullName))
                     td2.appendChild(document.createTextNode(cursor.value.status))
-                    // td3.appendChild(document.createTextNode(cursor.value.phone))
-                    // td4.appendChild(document.createTextNode(cursor.value.birth))
+
     
                     tr.append(td1,td2,td3,td4)
                     patintList.appendChild(tr)
@@ -86,31 +80,17 @@ document.addEventListener('DOMContentLoaded',()=>{
       const items = patintList.getElementsByTagName('tr');
       for(let i=0;i < tableR.length;i++){
         const val = tableR[i].firstElementChild.textContent
-        // const a = tableR[i].children[0].textContent
-        // const b = tableR[i].children[1].textContent
-        // const c = tableR[i].children[2].textContent
-        // const d = tableR[i].children[3].textContent
-        // const e = tableR[i].children[4].textContent
-        
-        //tableR[i].children.style.color = 'red'
-        //patintList.style.width = '100%'
-        //tableR[i].children[2].style.marginLeft = '120px'
-        //patintList.children[0].children[0].style.borderSpacing = '100px'
+
         if(val.toLowerCase().indexOf(input) != -1){
           
           tableR[i].style.display = ''
           
         }else{
           tableR[i].style.display = 'none'
-          //tableR[i].parentElement.style.width = '100%'
+
         }
       }
-      // Array.from(items).forEach((item) => {
-      //   const val = item.textContent;
-      //   if (val.toLowerCase().indexOf(input) != -1) {
-      //     item.style.display = 'block';
-      //   } else item.style.display = 'none';
-      // });
+
     });
 
 
@@ -131,13 +111,7 @@ document.addEventListener('DOMContentLoaded',()=>{
               const td2 = document.createElement('td')
               const td3 = document.createElement('td')
               
-              // const td4 = document.createElement('td')
-              // const td5 = document.createElement('td')
-              // const td6 = document.createElement('td')
-                
-                
-                //link.className = 'remove-item'
-                //link.innerHTML = '<i class="fas fa-trash"></i>'
+
               
               td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
     
@@ -170,19 +144,12 @@ document.addEventListener('DOMContentLoaded',()=>{
             const td2 = document.createElement('td')
             const td3 = document.createElement('td')
            
-            // const td4 = document.createElement('td')
-            // const td5 = document.createElement('td')
-            // const td6 = document.createElement('td')
-              
-              
-              //link.className = 'remove-item'
-              //link.innerHTML = '<i class="fas fa-trash"></i>'
+
             
             td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
-            //td5.appendChild(document.createTextNode(cursor.value.address))
+
             td1.appendChild(document.createTextNode(cursor.value.fullName))
-            //td2.appendChild(document.createTextNode(cursor.value.id))
-            //td3.appendChild(document.createTextNode(cursor.value.phone))
+
             td2.appendChild(document.createTextNode(cursor.value.status))
 
             tr.append(td1,td2,td3)
