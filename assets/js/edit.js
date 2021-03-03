@@ -1,7 +1,7 @@
 //UI variables
-const form = document.querySelector("#task-form"); //The form at the top
+const form = document.querySelector("#task-form"); 
 const form1 = document.querySelector("#labratory-form"); 
-const taskInput = document.querySelector("#task"); //the task input text field
+const taskInput = document.querySelector("#task"); 
 const labInput = document.querySelector("#lab");
 const labInput1 = document.querySelector("#labre");
 const labInput2 = document.querySelector("#lab_Text_Field");
@@ -10,7 +10,7 @@ const taskList = document.querySelector(".collection");
 const labYes = document.querySelector("#labYes");
 
 
-//read from q string
+
 const urlParams = new URLSearchParams(window.location.search);
 const id = Number(urlParams.get("id"));
 const idd = Number(urlParams.get("idd"));
@@ -25,20 +25,18 @@ var DB;
 console.log(idd);
 console.log(id);
 
-// Add Event Listener [on Load]
+
 document.addEventListener("DOMContentLoaded", () => {
-  // create the database
+
   let TasksDB = indexedDB.open("Hospital", 3);
 
   // if there's an error
   TasksDB.onerror = function () {
     console.log("There was an error");
   };
-  // if everything is fine, assign the result to the instance
+  
   TasksDB.onsuccess = function () {
-    // console.log('Database Ready');
-
-    // save the result
+   
     DB = TasksDB.result;
 
     displayTask();

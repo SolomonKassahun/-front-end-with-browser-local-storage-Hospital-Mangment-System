@@ -55,14 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
   }
-//   function DisplayPatient(){
-        
-//     let objectStore = DB.transaction('tasks').objectStore('tasks')
-//     objectStore.openCursor().onsuccess = function(e){
-//         let cursor = e.target.result
-
-//         if((cursor.value.uName == "kidus")&& (cursor.value.password == "kide7981")){
-//             window.open("faculity.html");
 
 
 
