@@ -49,22 +49,12 @@ document.addEventListener('DOMContentLoaded',()=>{
               
               
                 const td3 = document.createElement('td')
-                // const td4 = document.createElement('td')
-                // const td5 = document.createElement('td')
-                // const td6 = document.createElement('td')
-                // let taskobjectStore = DB.transaction('tasks').objectStore('tasks')
-                // taskobjectStore.openCursor().onsuccess = function(e){
-                // let taskcursor = e.target.result
-                // console.log("kide")
-                
-                //link.className = 'remove-item'
-                //link.innerHTML = '<i class="fas fa-trash"></i>'
+
                 td3.innerHTML = `<a href="lab_edit.html?idd=${cursor.value.idd}"><i class="fas fa-edit"></i></a>`
                
                 td1.appendChild(document.createTextNode(cursor.value.fullName))
                 td2.appendChild(document.createTextNode(cursor.value.labStatus))
-                // td3.appendChild(document.createTextNode(cursor.value.phone))
-                // td4.appendChild(document.createTextNode(cursor.value.birth))
+
                 
 
                 tr.append(td1,td2,td3)
@@ -80,31 +70,17 @@ document.addEventListener('DOMContentLoaded',()=>{
       const items = patintList.getElementsByTagName('tr');
       for(let i=0;i < tableR.length;i++){
         const val = tableR[i].firstElementChild.textContent
-        // const a = tableR[i].children[0].textContent
-        // const b = tableR[i].children[1].textContent
-        // const c = tableR[i].children[2].textContent
-        // const d = tableR[i].children[3].textContent
-        // const e = tableR[i].children[4].textContent
-        
-        //tableR[i].children.style.color = 'red'
-        //patintList.style.width = '100%'
-        //tableR[i].children[2].style.marginLeft = '120px'
-        //patintList.children[0].children[0].style.borderSpacing = '100px'
+
         if(val.toLowerCase().indexOf(input) != -1){
           
           tableR[i].style.display = ''
           
         }else{
           tableR[i].style.display = 'none'
-          //tableR[i].parentElement.style.width = '100%'
+
         }
       }
-      // Array.from(items).forEach((item) => {
-      //   const val = item.textContent;
-      //   if (val.toLowerCase().indexOf(input) != -1) {
-      //     item.style.display = 'block';
-      //   } else item.style.display = 'none';
-      // });
+
     });
 
 
@@ -156,18 +132,11 @@ document.addEventListener('DOMContentLoaded',()=>{
         const td1 = document.createElement('td')
         const td2 = document.createElement('td')
         const td3 = document.createElement('td')
-        // const td4 = document.createElement('td')
-        // const td5 = document.createElement('td')
-        // const td6 = document.createElement('td')
-          
-          
-          //link.className = 'remove-item'
-          //link.innerHTML = '<i class="fas fa-trash"></i>'
+
         td3.innerHTML = `<a href="lab_edit.html?idd=${cursor.value.idd}"><i class="fas fa-edit"></i></a>`
-        //td5.appendChild(document.createTextNode(cursor.value.address))
+
         td1.appendChild(document.createTextNode(cursor.value.fullName))
-        //td2.appendChild(document.createTextNode(cursor.value.id))
-        //td3.appendChild(document.createTextNode(cursor.value.phone))
+
         td2.appendChild(document.createTextNode(cursor.value.labStatus))
 
         tr.append(td1,td2,td3)
