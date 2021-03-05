@@ -122,7 +122,7 @@ function addNewTask(e) {
     status: "unseen",
     uName: uName.value,
     password:password.value,
-    acceptance: "pending"
+    acceptance: "accepted"
    
 
   

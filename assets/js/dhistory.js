@@ -16,7 +16,7 @@ const tableR = patintList.getElementsByTagName('tr')
 //const filter = document.getElementById('#filter')
 
 const urlParams = new URLSearchParams(window.location.search);
-const docName = urlParams.get("dname");
+
 
 
 let DB;
@@ -46,40 +46,38 @@ document.addEventListener('DOMContentLoaded',()=>{
         objectStore.openCursor().onsuccess = function(e){
             let cursor = e.target.result
             //console.log(cursor.value.doctor)
-            if (cursor){
                 if((cursor.value.status) == "seen"){
-                    const tr = document.createElement('tr')
-                    tr.setAttribute('data-patient-id',cursor.value.id)
-                    tr.className = 'pInformation'
-                    const td1 = document.createElement('td')
-                    const td2 = document.createElement('td')
-                    const td3 = document.createElement('td')
-                    
-                    // const td4 = document.createElement('td')
-                    // const td5 = document.createElement('td')
-                    // const td6 = document.createElement('td')
-                    
-                    //link.className = 'remove-item'
-                    //link.innerHTML = '<i class="fas fa-trash"></i>'
-                    
-                    td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
-                   
-                    td1.appendChild(document.createTextNode(cursor.value.fullName))
-                    td2.appendChild(document.createTextNode(cursor.value.status))
-                    // td3.appendChild(document.createTextNode(cursor.value.phone))
-                    // td4.appendChild(document.createTextNode(cursor.value.birth))
-    
-                    tr.append(td1,td2,td3,td4)
-                    patintList.appendChild(tr)
-                   
-                    
+                  const tr = document.createElement('tr')
+                  tr.setAttribute('data-patient-id',cursor.value.id)
+                  tr.className = 'pInformation'
+                  const td1 = document.createElement('td')
+                  const td2 = document.createElement('td')
+                  const td3 = document.createElement('td')
+                  
+                  // const td4 = document.createElement('td')
+                  // const td5 = document.createElement('td')
+                  // const td6 = document.createElement('td')
+                  
+                  //link.className = 'remove-item'
+                  //link.innerHTML = '<i class="fas fa-trash"></i>'
+                  
+                  td3.innerHTML = `<a href="edit.html?id=${cursor.value.id}"><i class="fas fa-edit"></i></a>`
+                  
+                  td1.appendChild(document.createTextNode(cursor.value.fullName))
+                  td2.appendChild(document.createTextNode(cursor.value.status))
+                  // td3.appendChild(document.createTextNode(cursor.value.phone))
+                  // td4.appendChild(document.createTextNode(cursor.value.birth))
+  
+                  tr.append(td1,td2,td3)
+                  patintList.appendChild(tr)
+                                     
                 }
                 cursor.continue()
             }
             
         
         }
-    }
+    
     
     filter.addEventListener('keyup', (e) => {
       const input = e.target.value.toLowerCase();
